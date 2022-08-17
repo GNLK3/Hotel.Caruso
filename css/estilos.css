@@ -1,0 +1,899 @@
+*¨{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  white;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color:  white;
+}
+.encabezado1{
+    display: flex;
+    background-color: #3D518C;
+    height: auto;  
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    display: inline-block;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-right: 1px solid black;
+}
+li a:visited{
+    color: purple ;
+}
+li a:hover{
+    background-color: #091540;
+}
+h1{
+    display: block;
+    text-align: center;
+}
+hr{
+    width: 55%;
+    border: 1px solid black;
+    background-color: black; 
+}
+.caja1{
+    height: 850px;
+    background-image: url(../imageneshotel/hotel.png);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid purple;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.call{
+    width: 50%;
+    height: 300px;
+    color: white;
+    border: 4px solid black;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.call a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 5px purple;
+    border: 1px solid  white;;    
+}
+.call a:hover{
+    background-color: blueviolet
+}
+.call p{
+    margin-bottom: 25px;
+}
+.caja2{
+    width: 100%; 
+    display: grid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.imag1{
+    background-image: url(../imageneshotel/spa1.png);
+    background-size: cover;
+    background-position: center;
+}
+.imag2{
+    background-image: url(../imageneshotel/restaurante.png);
+    background-size: cover;
+    background-position: center;
+}
+.imag3{
+    background-image: url(../imageneshotel/estacionamiento.png);
+    background-size: cover;
+    background-position: center; 
+}
+.caja3{
+    padding: 100px;
+    border: 100px;
+    text-align: center;
+}
+.nosotros{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: #3D518C;
+    height: 170px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+}
+footer i{
+    color:black;
+    font-size: 30px;    
+    padding-left: 16px;    
+}
+.footer1{
+    padding-left: 16px;
+}
+.piedepagina{
+    text-align: left;
+}
+
+img{
+    max-width: 1000px;
+    max-height: 1000px;
+}
+.imglogo{
+    max-width: 115px;
+    max-height: 115px;
+    display: block;
+    position: relative;
+    padding-left: 46%;
+    display: flex;
+}
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 22px;
+}
+.serv{
+    width: 85%; 
+    display: grid;
+    padding: 20px;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin: 25px 145px; 
+}
+.img{
+    background-color: gray;
+    border: 5px solid purple;
+    width: 100%;
+    text-align: center;
+    color: black;    
+}
+.img2{
+    background-image: url(../imageneshotel/wifi.png);
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image: url(../imageneshotel/lavanderia.png);
+    background-size: cover;
+    background-position: center;
+}
+.img4{
+    background-image: url(../imageneshotel/desayuno.png);
+    background-size: cover;
+    background-position: center;
+}
+.img5{
+    background-image: url(../imageneshotel/spa1.png);
+    background-size: cover;
+    background-position: center;
+}
+.img6{
+    background-image: url(../imageneshotel/estacionamiento.png);
+    background-size: cover;
+    background-position: center;
+}
+.img7{
+    background-image: url(../imageneshotel/sala.png);
+    background-size: cover;
+    background-position: center;
+}
+#onl{
+    text-align: center;
+    padding: 20px;
+    border: 5px solid black;
+    display: block;
+    background-image: url(../imageneshotel/spa2.png);
+    background-size: cover;
+    background-position: center;
+}
+.formulario{
+    border: 5px solid purple;
+    display: inline-block;
+    width: 50%;
+    padding: 30px;    
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.formulario input{
+    margin-top: 2px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 35px;
+}
+.form1{
+    text-align: left;
+    display: block;
+    margin: 5px;    
+    padding: 9px;
+}
+.form2{
+    text-align: left;
+    display: block;
+    margin: 5px;    
+    padding: 9px;
+}
+.form3{
+    text-align: left;
+    display: block;
+    margin: 5px;    
+    padding: 9px;
+}
+.form4{
+    text-align: left;
+    display: block;
+    margin: 5px;    
+    padding: 9px;
+}
+.form5{
+    text-align: left;
+    display: block;
+    margin: 5px;    
+    padding: 9px;
+}
+.form6{
+    text-align: left;    
+    display: block;
+    margin: 5px;    
+    padding: 9px;
+}
+.form8{
+    text-align: left;    
+    display: block;
+    margin: 5px;    
+    padding: 9px;
+}
+#form7{
+   display: block;
+   margin: 0 auto;
+   width: 25%;
+   height: 35%;
+}
+.todo{
+    text-align: center;        
+    border: 5px solid black;
+    display: block; 
+    background-image: url(../imageneshotel/presidencia2.png);
+    width: 40%;   
+    margin: 0 auto;
+}
+.formulario2{
+    border: 5px solid orange;
+    display: inline-block;
+    width: 75%;   
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+    background-color: gray;
+}
+.formulario2 input{
+    margin-top: 2px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 35px;
+    background-color: white;
+}
+.contacto1{
+    border: 5px solid orange;
+    display: inline-block;
+    width: 75%;   
+    margin: 0 auto;
+    padding: 2%;
+    text-align: center;
+    background-color: gray;
+}
+.contacto1 iframe{
+    height: auto;
+    width: auto;
+}
+.gal{
+    max-width: 500px;
+    max-height: 500px;
+    display: inline-block;
+    margin: 25px;
+    border: #091540 5px solid;
+}
+.foto1{
+    background-color: skyblue ;
+    width: 85%;
+    margin: 2% auto;
+    padding: 1%; 
+    display: grid;    
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    border: purple 4px solid;
+}
+.fotos1{
+    background-image: url(../imageneshotel/habitaciones.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+
+}
+.fotos2{
+    background-image: url(../imageneshotel/habitaciones2.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos3{
+    background-image: url(../imageneshotel/habitacion3.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos4{
+    background-image: url(../imageneshotel/habitacion4.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos5{
+    background-image: url(../imageneshotel/habitacion5.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos6{
+    background-image: url(../imageneshotel/habitacion6.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos28{
+    background-image: url(../imageneshotel/habitacion7.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.foto2{
+    background-color:blue;
+    width: 85%;
+    margin: 2% auto;
+    padding: 1%; 
+    display: grid;    
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    border: purple 4px solid;
+}
+.fotos7{
+    background-image: url(../imageneshotel/suite.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos8{
+    background-image: url(../imageneshotel/suite1.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos9{
+    background-image: url(../imageneshotel/suite2.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos10{
+    background-image: url(../imageneshotel/suite3.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos11{
+    background-image: url(../imageneshotel/suite4.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos12{
+    background-image: url(../imageneshotel/suite5.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos27{
+    background-image: url(../imageneshotel/suite6.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.foto3{
+    background-color:#3D518C ;
+    width: 85%;
+    margin: 2% auto;
+    padding: 1%; 
+    display: grid;    
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    border: purple 4px solid;
+}
+.fotos13{
+    background-image: url(../imageneshotel/presidencia.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos14{
+    background-image: url(../imageneshotel/presidencia2.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos15{
+    background-image: url(../imageneshotel/presidencia3.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos16{
+    background-image: url(../imageneshotel/presidencia4.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos17{
+    background-image: url(../imageneshotel/presidencia5.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos18{
+    background-image: url(../imageneshotel/presidencia6.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos26{
+    background-image: url(../imageneshotel/presidencia7.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.foto4{
+    background-color: purple ;
+    width: 85%;
+    margin: 2% auto;
+    padding: 1%; 
+    display: grid;    
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    color: white;
+    border: purple 4px solid;
+}
+.fotos19{
+    background-image: url(../imageneshotel/spa1.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos20{
+    background-image: url(../imageneshotel/spa2.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos21{
+    background-image: url(../imageneshotel/spa3.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos22{
+    background-image: url(../imageneshotel/spa4.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos23{
+    background-image: url(../imageneshotel/spa5.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos24{
+    background-image: url(../imageneshotel/spa6.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.fotos25{
+    background-image: url(../imageneshotel/spa7.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+}
+.sub{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 24px;
+}
+
+#se{
+    text-align: center;
+    background-color: purple;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.tabla{
+    text-align: center;
+}
+.tabla i{
+    font-size: 30px;
+    padding: 15px;
+}
+@media only screen and (min-width:480px) and (max-width:767px){
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 11px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    p{
+        font-size: 12px;
+    }
+    ul{
+        font-size: 12px;
+    }
+    label{
+        font-size: 12px;
+    }
+    .serv{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .encabezado1{
+        flex-direction: column;
+        flex-wrap: wrap;        
+    }
+    .caja4{
+        width: 100%;
+        display: inline-block;
+    }
+    .rigth{
+        width: 100%;
+        display: inline-block;
+    }
+    .nosotros{
+        flex-direction: column;
+    }
+    #botoncito{
+        font-size: 12px; 
+    }
+    table{
+       position: relative;
+       display: inline-block;
+       background-position: center;
+       text-align: center;
+    }
+    .tabla i{
+        font-size: 13px;
+        padding: 2px;
+    }
+    #onl{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .formulario{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .formulario input{
+        height: 25px;
+    }
+    #form7{
+        display: block;
+        margin: 0 auto;
+        width: 25%;
+        height: 35%; 
+        padding: 5px;
+    }
+    .form1{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form2{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form3{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form4{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form5{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form6{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form8{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .todo{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contacto1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .formulario2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .formulario2 input{
+        height: 25px;
+    }
+    .foto1{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .foto2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .foto3{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .foto4{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        width: 95%;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1199px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    h5{
+        font-size: 13px;
+    }
+    p{
+        font-size: 14px;
+    }
+    ul{
+        font-size: 14px;
+    }
+    label{
+        font-size: 14px;
+    }
+    .serv{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .caja4{
+        width: 100%;
+        display: inline-block;
+    }
+    .rigth{
+        width: 100%;
+        display: inline-block;
+    }
+    #botoncito{
+        font-size: 15px; 
+    }
+    .nosotros{
+        flex-direction: column;
+    }
+    .tabla i{
+        font-size: 19px;
+        padding: 4px;
+    }
+    #onl{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .formulario{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .formulario input{
+        height: 30px;
+    }
+    #form7{
+        display: block;
+        margin: 0 auto;
+        width: 35%;
+        height: 35%;
+        padding: 5px;
+    }
+    .form1{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form2{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form3{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form4{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form5{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form6{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .form8{
+        margin: 2px;    
+        padding: 5px;
+    }
+    .todo{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .contacto1{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .formulario2{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .formulario2 input{
+        height: 30px;
+    }
+    .foto1{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .foto2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .foto3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .foto4{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+        width: 95%;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:1200px){
+    .serv{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 200px);
+        width: 95%;
+        margin: 0;
+    }
+    .caja4{
+        width: 50%;
+    }
+    .rigth{
+        width: 50%;
+    }
+    #onl{
+        padding: 20px;
+        margin: 10px 150px 10px 150px;
+    }
+    .formulario{
+        width: 60%;
+        padding: 30px;    
+        margin: 0 auto;
+    }
+    .formulario input{
+        margin-top: 3px;
+        width: 100%;
+        padding-left: 3px;
+        padding-right: 3px;
+        height: 30px;
+    }
+    .todo{
+        margin: 0, auto;
+        padding: 3%;
+    }
+    .contacto1{
+        width: 75%;
+        padding:2%;    
+        margin: 2%;
+    }
+    .formulario2{
+        width: 75%;
+        padding: 2%;    
+        margin: 2%;
+    }
+    .formulario2 input{
+        margin-top: 3px;
+        width: 100%;
+        padding-left: 3px;
+        padding-right: 3px;
+        height: 30px;
+    }
+}       
