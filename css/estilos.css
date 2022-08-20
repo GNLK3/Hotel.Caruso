@@ -651,8 +651,8 @@ img{
     .serv{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 200px);
-        width: 95%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
     }
     .encabezado1{
         flex-direction: column;
@@ -746,26 +746,30 @@ img{
     .foto1{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
-        width: 95%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
     }
     .foto2{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
-        width: 95%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
     }
     .foto3{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
-        width: 95%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
     }
     .foto4{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
-        width: 95%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2%;
     }
 }
 @media only screen and (min-width:768px) and (max-width:1199px){
@@ -796,8 +800,8 @@ img{
     .serv{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 200px);
-        width: 95%;
-        margin: 0;
+        width: 90%;
+        margin: 0 auto;
     }
     .caja4{
         width: 100%;
@@ -882,25 +886,29 @@ img{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
-        margin: 0;
+        margin: 0 auto;
+        margin-top: 2%;
     }
     .foto2{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
-        margin: 0;
+        margin: 0 auto;
+        margin-top: 2%;
     }
     .foto3{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
-        margin: 0;
+        margin: 0 auto;
+        margin-top: 2%;
     }
     .foto4{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
-        margin: 0;
+        margin: 0 auto;
+        margin-top: 2%;
     }
 }
 @media only screen and (min-width:1200px){
