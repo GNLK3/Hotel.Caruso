@@ -34,11 +34,11 @@ li a{
     text-decoration: none;
     border-right: 1px solid black;
 }
-li a:visited{
-    color: purple ;
+.navbar a:visited{
+    color: lightgray;
 }
-li a:hover{
-    background-color: #091540;
+.navbar a:hover{
+    background-color:black;
 }
 h1{
     display: block;
@@ -95,8 +95,9 @@ hr{
     margin-bottom: 25px;
 }
 .caja2{
-    width: 100%; 
+    width: 95%; 
     display: grid;
+    margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
     grid-template-rows: repeat(1, 300px);
@@ -119,21 +120,27 @@ iframe:hover{
     background-image: url(../imageneshotel/spa1.png);
     background-size: cover;
     background-position: center;
+    margin: 1%;
 }
 .imag2{
     background-image: url(../imageneshotel/restaurante.png);
     background-size: cover;
     background-position: center;
+    margin: 1%;
 }
 .imag3{
     background-image: url(../imageneshotel/estacionamiento.png);
     background-size: cover;
-    background-position: center; 
+    background-position: center;
+    margin: 1%; 
 }
 .caja3{
-    padding: 100px;
-    border: 100px;
+    width: 80%;
     text-align: center;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 .nosotros{
     display: flex;
@@ -141,7 +148,7 @@ iframe:hover{
     flex-wrap: wrap;
 }
 footer{
-    background-color: #3D518C;
+    background-color: rgb(109, 109, 109);
     height: 170px;
     width: 100%;
     display: inline-block;
@@ -236,86 +243,10 @@ img{
     background-size: cover;
     background-position: center;
 }
-#onl{
-    text-align: center;
-    padding: 20px;
-    border: 5px solid black;
-    display: block;
-    background-image: url(../imageneshotel/spa2.png);
-    background-size: cover;
-    background-position: center;
-}
-#onl:hover{
-    filter: sepia(50%);
-    transition: 3s;
-}
-.formulario{
-    border: 5px solid purple;
-    display: inline-block;
-    width: 50%;
-    padding: 30px;    
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-}
-.formulario input{
-    margin-top: 2px;
+.form-group{
     width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 35px;
 }
-.form1{
-    text-align: left;
-    display: block;
-    margin: 5px;    
-    padding: 9px;
-}
-.form2{
-    text-align: left;
-    display: block;
-    margin: 5px;    
-    padding: 9px;
-}
-.form3{
-    text-align: left;
-    display: block;
-    margin: 5px;    
-    padding: 9px;
-}
-.form4{
-    text-align: left;
-    display: block;
-    margin: 5px;    
-    padding: 9px;
-}
-.form5{
-    text-align: left;
-    display: block;
-    margin: 5px;    
-    padding: 9px;
-}
-.form6{
-    text-align: left;    
-    display: block;
-    margin: 5px;    
-    padding: 9px;
-}
-.form8{
-    text-align: left;    
-    display: block;
-    margin: 5px;    
-    padding: 9px;
-}
-#form7{
-   display: block;
-   margin: 0 auto;
-   width: 25%;
-   height: 35%;
-}
-#form7:visited{
-    background-color: purple;
-}
+
 .todo{
     text-align: center;        
     border: 5px solid black;

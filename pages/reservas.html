@@ -16,17 +16,13 @@
 </head>
 <body>
     <header>
-    <div class="encabezado1">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/galeria.html">Galeria</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav><br>
-    </div>
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <a class="navbar-brand" href="#">Reservas</a>
+            <a class="navbar-brand" href="../pages/servicios.html">Servicios</a>
+            <a class="navbar-brand" href="../pages/galeria.html">Galeria</a>
+            <a class="navbar-brand" href="../pages/contacto.html">Contacto</a>  
+        </nav> 
     </header>
             <h1>Reservas</h1>
             <img class="imglogo" src="../imageneshotel/logohotel.jpg"><hr>
@@ -38,42 +34,44 @@
             <a href="../pages/contacto.html">Mas Info</a>
         </div>
     </main><hr>
+            <!-- Inicio del formulario -->
 
-        <div id="onl"><h2>Reservas Online</h2>
-        <div class="formulario">
-        <h3>Consulte las fechas disponibles</h3>
-        <form>
-            <div class="form1">
-                <label for="Nombre">Fecha de ingreso</label>
-                <label><input type="date" min="2022-07-17" name="fecha" required></label><br>
-            </div>
-            <div class="form2">
-                <label for="Nombre">Fecha de salida</label>
-                <label><input type="date" min="2022-07-18" name="fecha" required></label><br>
+            <div class="container col-xs-12 col-md-6 col-lg-4 col-xl-3 p-4 my-4 border text-left">
+                    <h2>Reservas Online</h2><br>
+
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="Nombre">Fecha de ingreso</label>
+                        <label><input type="date" min="2022-07-17" class="form-control" name="fecha" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Fecha de salida</label>
+                        <label><input type="date" min="2022-07-18" class="form-control" name="fecha" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Horario de ingreso</label>    
+                        <label><input type="time" class="form-control" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <label><input type="email" class="form-control" id="email"></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <label><input type="text" class="form-control" name="Nombre" required></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Apellido">Apellido</label>        
+                        <label><input type="text" class="form-control" name="Apellido" required></label>
+                    </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-primary">Limpiar</button>
+                </form>
+                   
             </div>    
-            <div class="form3">
-                <label for="Nombre">Horario de ingreso</label>    
-                <label><input type="time" required></label><br>
-            </div>
-            <div class="form6">   
-                <label for="email">Email</label>
-                <input type="email" name="Email" required><br>
-            </div>
-            <div class="form4">    
-                <label for="Nombre">Nombre</label>
-                <label><input type="text" name="Nombre" required></label><br>
-            </div>    
-            <div class="form5">
-                <label for="Apellido">Apellido</label>        
-                <label><input type="text" name="Apellido" required></label><br>
-            </div>      
-            <div id="form7">
-                <input type="submit" value="enviar">
-                <input type="reset" value="limpiar">            
-            </div>            
-        </form>
-        </div>
-        </div>
+
+                <!-- Termina formulario -->
+
     <footer>
         <div class="piedepagina">        
             <p class="footer1">Seguinos en nuestras redes</p>
