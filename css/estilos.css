@@ -108,14 +108,6 @@ hr{
     filter: drop-shadow(16px 16px 20px purple);
     transition: filter 3s;
 }
-iframe:hover{
-    transform: scale(1.2);
-    transition: 3s;
-}
-.right:hover{
-    transform: scale(1.1);
-    transition: 3s;
-}
 .imag1{
     background-image: url(../imageneshotel/spa1.png);
     background-size: cover;
@@ -135,7 +127,7 @@ iframe:hover{
     margin: 1%; 
 }
 .caja3{
-    width: 80%;
+    width: 100%;
     text-align: center;
     background-color: lightgray;
     margin: 0 auto;
@@ -166,7 +158,9 @@ footer i{
 .piedepagina{
     text-align: left;
 }
-
+.formulario label{
+    width: 90%;
+}
 img{
     max-width: 1000px;
     max-height: 1000px;
@@ -194,13 +188,13 @@ img{
     font-size: 22px;
 }
 .serv{
-    width: 85%; 
+    width: 90%; 
     display: grid;
-    padding: 20px;
+    padding: 3%;
     grid-template-rows: repeat(6, 100px);
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    margin: 25px 145px; 
+    margin: 0 auto; 
 }
 .serv :hover{
     transform: scale(1.1);
