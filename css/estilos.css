@@ -124,7 +124,8 @@ hr{
     background-image: url(../imageneshotel/estacionamiento.png);
     background-size: cover;
     background-position: center;
-    margin: 1%; 
+    margin: 1%;
+    overflow: hidden; 
 }
 .caja3{
     width: 100%;
