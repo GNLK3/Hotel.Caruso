@@ -94,45 +94,59 @@
             primera clase durante más de 60 años.</p>
         <a class="btn btn-info botoncito" href="../pages/contacto.html">Mas Info</a>
     </div>
-    <hr>
+    <hr><br>
 
-    <!-- Inicio del formulario -->
 
-    <div class="container col-xs-12 col-md-10 col-lg-6 p-4 my-4 border bg-info text-left formulario">
-        <h2>Reservas Online</h2><br>
+    <div class="nosotros">
+        <!-- Inicio del formulario -->
 
-        <form action="/action_page.php">
-            <div class="form-group">
-                <label for="Nombre">Fecha de ingreso</label>
-                <label><input type="date" min="2022-07-17" class="form-control" name="fecha" required></label>
-            </div>
-            <div class="form-group">
-                <label for="Nombre">Fecha de salida</label>
-                <label><input type="date" min="2022-07-18" class="form-control" name="fecha" required></label>
-            </div>
-            <div class="form-group">
-                <label for="Nombre">Horario de ingreso</label>
-                <label><input type="time" class="form-control" required></label>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <label><input type="email" class="form-control" id="email"></label>
-            </div>
-            <div class="form-group">
-                <label for="Nombre">Nombre</label>
-                <label><input type="text" class="form-control" name="Nombre" required></label>
-            </div>
-            <div class="form-group">
-                <label for="Apellido">Apellido</label>
-                <label><input type="text" class="form-control" name="Apellido" required></label>
-            </div>
-            <button type="submit" class="btn btn-dark">Enviar</button>
-            <button type="reset" class="btn btn-dark">Limpiar</button>
-        </form>
+        <div class="container-fluid col-sm-12 col-lg-6 col-xl-4 p-4 my-2 bg-secondary text-left text-white formulario">
+            <h2>Reservas Online</h2>
 
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="Nombre">Fecha de ingreso</label>
+                    <label><input type="date" min="2022-07-17" class="form-control" name="fecha" required></label>
+                </div>
+                <div class="form-group">
+                    <label for="Nombre">Fecha de salida</label>
+                    <label><input type="date" min="2022-07-18" class="form-control" name="fecha" required></label>
+                </div>
+                <div class="form-group">
+                    <label for="Nombre">Horario de ingreso</label>
+                    <label><input type="time" class="form-control" required></label>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <label><input type="email" class="form-control" id="email"></label>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+                <button type="reset" class="btn btn-dark">Limpiar</button>
+            </form>
+        </div>
+
+        <!-- Termina formulario -->
+
+        <!-- Inicio tarjeta -->
+
+        <div class="container col-xs-12 col-sm-10 col-md-7 col-lg-6 col-xl-3 card bg-dark text-white my-4 mx-auto p-4 text-left" style="width:auto">
+            <img class="card-img-top" src="../imageneshotel/airtrain.png" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Conecte por AirTrain al lobby de nuestro hotel cerca del aeropuerto de San Francisco</h4>
+                <a href="../pages/contacto.html" class="btn btn-info">Mas Info!</a>
+            </div>
+        </div>
+        <div class="container col-xs-12 col-sm-10 col-md-7 col-lg-6 col-xl-3 card bg-dark text-white my-4 mx-auto p-4 text-left" style="width:auto">
+            <img class="card-img-top" src="../imageneshotel/renta.png" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Contrate el servicio de alquiler de Auto</h4>
+                <p class="card-text">Contamos con autos de primer nivel y precios accesibles para su comodidad.</p>
+                <a href="../pages/contacto.html" class="btn btn-info">Mas Info!</a>
+            </div>
+        </div>
+
+        <!-- Termina tarjeta -->
     </div>
-
-    <!-- Termina formulario -->
 
     <footer class="container-fluid col-12 bg-secondary text-center">
         <div class="piedepagina">
