@@ -1,32 +1,32 @@
-*¨{
+*¨ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:  white;
+    background-color: white;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    background-color:  white;
+    background-color: white;
 }
-.encabezado1{
-    display: flex;
-    background-color: #3D518C;
-    height: auto;  
-}
-ul{
+
+ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
-li{
+
+li {
     display: inline-block;
 }
-li a{
+
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -34,27 +34,33 @@ li a{
     text-decoration: none;
     border-right: 1px solid black;
 }
-.navbar a:visited{
+
+.navbar a:visited {
     color: lightgray;
 }
-.navbar a:hover{
-    background-color:black;
+
+.navbar a:hover {
+    background-color: black;
 }
-h1{
+
+h1 {
     display: block;
     text-align: center;
 }
-h1:hover{
-    background-color:rgba(51, 51, 51, 0.5);
+
+h1:hover {
+    background-color: rgba(51, 51, 51, 0.5);
     transition: 1s;
     color: white;
 }
-hr{
+
+hr {
     width: 55%;
     border: 1px solid black;
-    background-color: black; 
+    background-color: black;
 }
-.caja1{
+
+.caja1 {
     height: 850px;
     background-image: url(../imageneshotel/hotel.png);
     background-size: cover;
@@ -63,11 +69,13 @@ hr{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-.caja1:hover{
-    filter:grayscale(60%);
+
+.caja1:hover {
+    filter: grayscale(60%);
     transition: filter 3s;
 }
-.call{
+
+.call {
     width: 50%;
     height: auto;
     color: white;
@@ -79,23 +87,28 @@ hr{
     margin-top: 20px;
     text-align: justify;
 }
-.call a{
+
+.call a {
     background-color: black;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     text-shadow: 1px 1px 5px purple;
-    border: 1px solid  white;;    
+    border: 1px solid white;
+    ;
 }
-.call a:hover{
+
+.call a:hover {
     background-color: blueviolet;
     transition: background-color 2s;
 }
-.call p{
+
+.call p {
     margin-bottom: 25px;
 }
-.caja2{
-    width: 95%; 
+
+.caja2 {
+    width: 95%;
     display: grid;
     margin: 0 auto;
     margin-top: 2%;
@@ -104,30 +117,35 @@ hr{
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
-.caja2:hover{
+
+.caja2:hover {
     filter: drop-shadow(16px 16px 20px purple);
     transition: filter 3s;
 }
-.imag1{
+
+.imag1 {
     background-image: url(../imageneshotel/spa1.png);
     background-size: cover;
     background-position: center;
     margin: 1%;
 }
-.imag2{
+
+.imag2 {
     background-image: url(../imageneshotel/restaurante.png);
     background-size: cover;
     background-position: center;
     margin: 1%;
 }
-.imag3{
+
+.imag3 {
     background-image: url(../imageneshotel/estacionamiento.png);
     background-size: cover;
     background-position: center;
     margin: 1%;
-    overflow: hidden; 
+    overflow: hidden;
 }
-.caja3{
+
+.caja3 {
     width: 100%;
     text-align: center;
     background-color: lightgray;
@@ -135,12 +153,23 @@ hr{
     margin-bottom: 3%;
     margin-top: 3%;
 }
-.nosotros{
+
+.caja10 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    background-size: cover;
+}
+
+.nosotros {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
 }
-footer{
+
+footer {
     background-color: rgb(109, 109, 109);
     height: 170px;
     width: 100%;
@@ -148,33 +177,31 @@ footer{
     margin-top: 100px;
     text-align: center;
 }
-footer i{
-    color:black;
-    font-size: 30px;    
-    padding-left: 16px;    
-}
-.footer1{
+
+footer i {
+    color: black;
+    font-size: 30px;
     padding-left: 16px;
 }
-.piedepagina{
+
+.footer1 {
+    padding-left: 16px;
+}
+
+.piedepagina {
     text-align: left;
 }
-.formulario label{
+
+.formulario label {
     width: 90%;
 }
-img{
+
+img {
     max-width: 1000px;
     max-height: 1000px;
 }
-.imglogo{
-    max-width: 115px;
-    max-height: 115px;
-    display: block;
-    position: relative;
-    padding-left: 46%;
-    display: flex;
-}
-.subir{
+
+.subir {
     height: 50px;
     width: 50px;
     background-color: black;
@@ -188,368 +215,314 @@ img{
     border: 2px solid white;
     font-size: 22px;
 }
-.serv{
-    width: 90%; 
-    display: grid;
-    padding: 3%;
-    grid-template-rows: repeat(6, 100px);
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    margin: 0 auto; 
-}
-.serv :hover{
-    transform: scale(1.1);
-    transition: 0,2s;
-}
-.img{
-    background-color: gray;
-    border: 5px solid purple;
-    width: 100%;
-    text-align: center;
-    color: black;    
-}
-.img2{
-    background-image: url(../imageneshotel/wifi.png);
-    background-size: cover;
-    background-position: center;
-}
-.img3{
-    background-image: url(../imageneshotel/lavanderia.png);
-    background-size: cover;
-    background-position: center;
-}
-.img4{
-    background-image: url(../imageneshotel/desayuno.png);
-    background-size: cover;
-    background-position: center;
-}
-.img5{
-    background-image: url(../imageneshotel/spa1.png);
-    background-size: cover;
-    background-position: center;
-}
-.img6{
-    background-image: url(../imageneshotel/estacionamiento.png);
-    background-size: cover;
-    background-position: center;
-}
-.img7{
-    background-image: url(../imageneshotel/sala.png);
-    background-size: cover;
-    background-position: center;
-}
-.form-group{
+
+.form-group {
     width: 100%;
 }
 
-.todo{
-    text-align: center;        
-    border: 5px solid black;
-    display: block; 
-    background-image: url(../imageneshotel/presidencia2.png);
-    width: 40%;   
-    margin: 0 auto;
+.formula label {
+    width: 60%;
 }
-.formulario2{
-    border: 5px solid orange;
-    display: inline-block;
-    width: 75%;   
-    margin: 0 auto;
-    padding: 2%;
-    text-align: center;
+
+.foto1 {
     background-color: gray;
-}
-.formulario2 input{
-    margin-top: 2px;
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 35px;
-    background-color: white;
-}
-.contacto1{
-    border: 5px solid orange;
-    display: inline-block;
-    width: 75%;   
-    margin: 0 auto;
-    padding: 2%;
-    text-align: center;
-    background-color: gray;
-}
-.contacto1 iframe{
-    height: auto;
-    width: auto;
-}
-.contacto1 h2:hover{
-    transform: scale(1.1);
-    transition: 3s;
-}
-.gal{
-    max-width: 500px;
-    max-height: 500px;
-    display: inline-block;
-    margin: 25px;
-    border: #091540 5px solid;
-}
-.foto1{    
-    background-color: purple ;
     width: 85%;
     margin: 2% auto;
-    padding: 1%; 
-    display: grid;    
+    padding: 1%;
+    display: grid;
     grid-template-rows: repeat(2, 250px);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     color: white;
-    border: 4px solid black;
+    border: 4px solid green;
 }
-.fotos1{
+
+.fotos1 {
     background-image: url(../imageneshotel/habitaciones.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 
 }
-.fotos2{
+
+.fotos2 {
     background-image: url(../imageneshotel/habitaciones2.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos3{
+
+.fotos3 {
     background-image: url(../imageneshotel/habitacion3.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos4{
+
+.fotos4 {
     background-image: url(../imageneshotel/habitacion4.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos5{
+
+.fotos5 {
     background-image: url(../imageneshotel/habitacion5.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos6{
+
+.fotos6 {
     background-image: url(../imageneshotel/habitacion6.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.foto1 :hover{
+
+.foto1 :hover {
     transform: scale(1.1);
-    transition: 0,2s;
+    transition: 0, 2s;
 }
-.fotos28{
+
+.fotos28 {
     background-image: url(../imageneshotel/habitacion7.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.foto2{
-    background-color:#3D518C ;
+
+.foto2 {
+    background-color: lightgrey;
     width: 85%;
     margin: 2% auto;
-    padding: 1%; 
-    display: grid;    
+    padding: 1%;
+    display: grid;
     grid-template-rows: repeat(2, 250px);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     color: white;
-    border: purple 4px solid;
+    border: orange 4px solid;
 }
-.fotos7{
+
+.fotos7 {
     background-image: url(../imageneshotel/suite.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos8{
+
+.fotos8 {
     background-image: url(../imageneshotel/suite1.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos9{
+
+.fotos9 {
     background-image: url(../imageneshotel/suite2.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos10{
+
+.fotos10 {
     background-image: url(../imageneshotel/suite3.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos11{
+
+.fotos11 {
     background-image: url(../imageneshotel/suite4.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos12{
+
+.fotos12 {
     background-image: url(../imageneshotel/suite5.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos27{
+
+.fotos27 {
     background-image: url(../imageneshotel/suite6.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.foto2 :hover{
+
+.foto2 :hover {
     transform: scale(1.1);
-    transition: 0,2s;
+    transition: 0, 2s;
 }
-.foto3{    
-    background-color:blue;
+
+.foto3 {
+    background-color: gray;
     width: 85%;
     margin: 2% auto;
-    padding: 1%; 
-    display: grid;    
+    padding: 1%;
+    display: grid;
     grid-template-rows: repeat(2, 250px);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     color: white;
-    border: purple 4px solid;
+    border: red 4px solid;
 }
-.fotos13{
+
+.fotos13 {
     background-image: url(../imageneshotel/presidencia.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos14{
+
+.fotos14 {
     background-image: url(../imageneshotel/presidencia2.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos15{
+
+.fotos15 {
     background-image: url(../imageneshotel/presidencia3.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos16{
+
+.fotos16 {
     background-image: url(../imageneshotel/presidencia4.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos17{
+
+.fotos17 {
     background-image: url(../imageneshotel/presidencia5.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos18{
+
+.fotos18 {
     background-image: url(../imageneshotel/presidencia6.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos26{
+
+.fotos26 {
     background-image: url(../imageneshotel/presidencia7.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.foto3 :hover{
+
+.foto3 :hover {
     transform: scale(1.1);
-    transition: 0,2s;
+    transition: 0, 2s;
 }
-.foto4{
-    background-color: skyblue ;
+
+.foto4 {
+    background-color: lightgrey;
     width: 85%;
     margin: 2% auto;
-    padding: 1%; 
-    display: grid;    
+    padding: 1%;
+    display: grid;
     grid-template-rows: repeat(2, 250px);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     color: white;
     border: purple 4px solid;
 }
-.fotos19{
+
+.fotos19 {
     background-image: url(../imageneshotel/spa1.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos20{
+
+.fotos20 {
     background-image: url(../imageneshotel/spa2.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos21{
+
+.fotos21 {
     background-image: url(../imageneshotel/spa3.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos22{
+
+.fotos22 {
     background-image: url(../imageneshotel/spa4.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos23{
+
+.fotos23 {
     background-image: url(../imageneshotel/spa5.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos24{
+
+.fotos24 {
     background-image: url(../imageneshotel/spa6.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.fotos25{
+
+.fotos25 {
     background-image: url(../imageneshotel/spa7.png);
     background-position: center;
     background-size: cover;
     border: 4px solid black;
 }
-.foto4 :hover{
+
+.foto4 :hover {
     transform: scale(1.1);
-    transition: 0,2s;
+    transition: 0, 2s;
 }
-.sub{
+
+.sub {
     display: inline-block;
     margin: 0 auto;
     padding: 0;
     font-size: 24px;
 }
 
-.se{
+.se {
     text-align: center;
     background-color: purple;
     color: white;
     display: block;
     text-decoration: none;
 }
-.se:hover{
+
+.se:hover {
     background-color: skyblue;
     transition: background-color 2s;
 }
-.tabla{
+
+.tabla {
     text-align: center;
 }
-.tabla i{
+
+.tabla i {
     font-size: 30px;
     padding: 15px;
 }
-.oculta{
+
+.oculta {
     width: 100%;
     height: auto;
     color: white;
@@ -560,148 +533,55 @@ img{
     margin: 0 auto;
 }
 
-@media only screen and (min-width:480px) and (max-width:767px){
-    h1{
-        font-size: 18px;
-    }
-    h2{
-        font-size: 14px;
-    }
-    h3{
-        font-size: 12px;
-    }
-    h4{
-        font-size: 11px;
-    }
-    h5{
-        font-size: 10px;
-    }
-    p{
-        font-size: 12px;
-    }
-    ul{
-        font-size: 12px;
-    }
-    label{
-        font-size: 12px;
-    }
-    .serv{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 200px);
-        width: 90%;
-        margin: 0 auto;
-    }
-    .encabezado1{
-        flex-direction: column;
-        flex-wrap: wrap;        
-    }
-    .caja4{
-        width: 100%;
-        display: inline-block;
-    }
-    .rigth{
-        width: 100%;
-        display: inline-block;
-    }
-    .nosotros{
+@media only screen and (min-width:480px) and (max-width:767px) {
+
+    .nosotros {
         flex-direction: column;
     }
-    .botoncito{
-        font-size: 12px; 
+
+    .botoncito {
+        font-size: 12px;
     }
-    table{
-       position: relative;
-       display: inline-block;
-       background-position: center;
-       text-align: center;
-    }
-    .tabla i{
+
+    .tabla i {
         font-size: 13px;
         padding: 2px;
     }
-    #onl{
+
+    .formulario {
         width: 80%;
         margin: 0 auto;
     }
-    .formulario{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .formulario input{
+
+    .formulario input {
         height: 25px;
     }
-    #form7{
-        display: block;
-        margin: 0 auto;
-        width: 25%;
-        height: 35%; 
-        padding: 5px;
-    }
-    .form1{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form2{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form3{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form4{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form5{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form6{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form8{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .todo{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .contacto1{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .formulario2{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .formulario2 input{
-        height: 25px;
-    }
-    .foto1{
+
+    .foto1 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
         width: 90%;
         margin: 0 auto;
         margin-top: 2%;
     }
-    .foto2{
+
+    .foto2 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
         width: 90%;
         margin: 0 auto;
         margin-top: 2%;
     }
-    .foto3{
+
+    .foto3 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
         width: 90%;
         margin: 0 auto;
         margin-top: 2%;
     }
-    .foto4{
+
+    .foto4 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
         width: 90%;
@@ -709,138 +589,56 @@ img{
         margin-top: 2%;
     }
 }
-@media only screen and (min-width:768px) and (max-width:1199px){
-    h1{
-        font-size: 20px;
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+    .botoncito {
+        font-size: 15px;
     }
-    h2{
-        font-size: 18px;
-    }
-    h3{
-        font-size: 16px;
-    }
-    h4{
-        font-size: 14px;
-    }
-    h5{
-        font-size: 13px;
-    }
-    p{
-        font-size: 14px;
-    }
-    ul{
-        font-size: 14px;
-    }
-    label{
-        font-size: 14px;
-    }
-    .serv{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 200px);
-        width: 90%;
-        margin: 0 auto;
-    }
-    .caja4{
-        width: 100%;
-        display: inline-block;
-    }
-    .rigth{
-        width: 100%;
-        display: inline-block;
-    }
-    .botoncito{
-        font-size: 15px; 
-    }
-    .nosotros{
+
+    .nosotros {
         flex-direction: column;
     }
-    .tabla i{
+
+    .tabla i {
         font-size: 19px;
         padding: 4px;
     }
-    #onl{
+
+    .formulario {
         width: 70%;
         margin: 0 auto;
     }
-    .formulario{
-        width: 70%;
-        margin: 0 auto;
-    }
-    .formulario input{
+
+    .formulario input {
         height: 30px;
     }
-    #form7{
-        display: block;
-        margin: 0 auto;
-        width: 35%;
-        height: 35%;
-        padding: 5px;
-    }
-    .form1{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form2{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form3{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form4{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form5{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form6{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .form8{
-        margin: 2px;    
-        padding: 5px;
-    }
-    .todo{
-        width: 70%;
-        margin: 0 auto;
-    }
-    .contacto1{
-        width: 70%;
-        margin: 0 auto;
-    }
-    .formulario2{
-        width: 70%;
-        margin: 0 auto;
-    }
-    .formulario2 input{
-        height: 30px;
-    }
-    .foto1{
+
+    .foto1 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
         margin: 0 auto;
         margin-top: 2%;
     }
-    .foto2{
+
+    .foto2 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
         margin: 0 auto;
         margin-top: 2%;
     }
-    .foto3{
+
+    .foto3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
         margin: 0 auto;
         margin-top: 2%;
     }
-    .foto4{
+
+    .foto4 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
         width: 95%;
@@ -848,54 +646,21 @@ img{
         margin-top: 2%;
     }
 }
-@media only screen and (min-width:1200px){
-    .serv{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 200px);
-        width: 95%;
-        margin: 0;
-    }
-    .caja4{
-        width: 50%;
-    }
-    .rigth{
-        width: 50%;
-    }
-    #onl{
-        padding: 20px;
-        margin: 10px 150px 10px 150px;
-    }
-    .formulario{
+
+@media only screen and (min-width:1200px) {
+
+    .formulario {
         width: 60%;
-        padding: 30px;    
+        padding: 30px;
         margin: 0 auto;
     }
-    .formulario input{
+
+    .formulario input {
         margin-top: 3px;
         width: 100%;
         padding-left: 3px;
         padding-right: 3px;
         height: 30px;
     }
-    .todo{
-        margin: 0, auto;
-        padding: 3%;
-    }
-    .contacto1{
-        width: 75%;
-        padding:2%;    
-        margin: 2%;
-    }
-    .formulario2{
-        width: 75%;
-        padding: 2%;    
-        margin: 2%;
-    }
-    .formulario2 input{
-        margin-top: 3px;
-        width: 100%;
-        padding-left: 3px;
-        padding-right: 3px;
-        height: 30px;
-    }
-}       
+
+}
