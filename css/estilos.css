@@ -123,42 +123,37 @@ hr {
 }
 
 .imag1 {
-  background-image: url(../imageneshotel/spa1.png);
   background-size: cover;
   background-position: center;
   margin: 1%;
+  background-image: url(../imageneshotel/spa1.png);
 }
 
 .imag2 {
-  background-image: url(../imageneshotel/restaurante.png);
   background-size: cover;
   background-position: center;
   margin: 1%;
+  background-image: url(../imageneshotel/restaurante.png);
 }
 
 .imag3 {
-  background-image: url(../imageneshotel/estacionamiento.png);
   background-size: cover;
   background-position: center;
   margin: 1%;
+  background-image: url(../imageneshotel/estacionamiento.png);
   overflow: hidden;
 }
 
-.caja3 {
+.caja3, .caja10 {
   width: 100%;
   text-align: center;
-  background-color: lightgray;
   margin: 0 auto;
+  background-color: lightgray;
   margin-bottom: 3%;
   margin-top: 3%;
 }
 
 .caja10 {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 3%;
-  margin-top: 3%;
   background-size: cover;
 }
 
@@ -239,52 +234,52 @@ img {
 }
 
 .fotos1 {
-  background-image: url(../imageneshotel/habitaciones.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/habitaciones.png);
 }
 
 .fotos2 {
-  background-image: url(../imageneshotel/habitaciones2.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/habitaciones2.png);
 }
 
 .fotos3 {
-  background-image: url(../imageneshotel/habitacion3.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/habitacion3.png);
 }
 
 .fotos4 {
-  background-image: url(../imageneshotel/habitacion4.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/habitacion4.png);
 }
 
 .fotos5 {
-  background-image: url(../imageneshotel/habitacion5.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/habitacion5.png);
 }
 
 .fotos6 {
-  background-image: url(../imageneshotel/habitacion6.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/habitacion6.png);
 }
 
 .fotos28 {
-  background-image: url(../imageneshotel/habitacion7.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/habitacion7.png);
 }
 
 .foto2 {
@@ -297,7 +292,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   color: white;
-  border: purple 4px solid;
+  border: 4px solid purple;
 }
 .foto2 :hover {
   transform: scale(1.1);
@@ -305,52 +300,52 @@ img {
 }
 
 .fotos7 {
-  background-image: url(../imageneshotel/suite.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/suite.png);
 }
 
 .fotos8 {
-  background-image: url(../imageneshotel/suite1.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/suite1.png);
 }
 
 .fotos9 {
-  background-image: url(../imageneshotel/suite2.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/suite2.png);
 }
 
 .fotos10 {
-  background-image: url(../imageneshotel/suite3.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/suite3.png);
 }
 
 .fotos11 {
-  background-image: url(../imageneshotel/suite4.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/suite4.png);
 }
 
 .fotos12 {
-  background-image: url(../imageneshotel/suite5.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/suite5.png);
 }
 
 .fotos27 {
-  background-image: url(../imageneshotel/suite6.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/suite6.png);
 }
 
 .foto3 {
@@ -363,7 +358,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   color: white;
-  border: lightgray 4px solid;
+  border: 4px solid lightgray;
 }
 .foto3 :hover {
   transform: scale(1.1);
@@ -371,52 +366,52 @@ img {
 }
 
 .fotos13 {
-  background-image: url(../imageneshotel/presidencia.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/presidencia.png);
 }
 
 .fotos14 {
-  background-image: url(../imageneshotel/presidencia2.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/presidencia2.png);
 }
 
 .fotos15 {
-  background-image: url(../imageneshotel/presidencia3.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/presidencia3.png);
 }
 
 .fotos16 {
-  background-image: url(../imageneshotel/presidencia4.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/presidencia4.png);
 }
 
 .fotos17 {
-  background-image: url(../imageneshotel/presidencia5.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/presidencia5.png);
 }
 
 .fotos18 {
-  background-image: url(../imageneshotel/presidencia6.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/presidencia6.png);
 }
 
 .fotos26 {
-  background-image: url(../imageneshotel/presidencia7.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/presidencia7.png);
 }
 
 .foto4 {
@@ -429,7 +424,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   color: white;
-  border: purple 4px solid;
+  border: 4px solid purple;
 }
 .foto4 :hover {
   transform: scale(1.1);
@@ -437,52 +432,52 @@ img {
 }
 
 .fotos19 {
-  background-image: url(../imageneshotel/spa1.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/spa1.png);
 }
 
 .fotos20 {
-  background-image: url(../imageneshotel/spa2.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/spa2.png);
 }
 
 .fotos21 {
-  background-image: url(../imageneshotel/spa3.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/spa3.png);
 }
 
 .fotos22 {
-  background-image: url(../imageneshotel/spa4.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/spa4.png);
 }
 
 .fotos23 {
-  background-image: url(../imageneshotel/spa5.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/spa5.png);
 }
 
 .fotos24 {
-  background-image: url(../imageneshotel/spa6.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/spa6.png);
 }
 
 .fotos25 {
-  background-image: url(../imageneshotel/spa7.png);
   background-position: center;
   background-size: cover;
   border: 4px solid black;
+  background-image: url(../imageneshotel/spa7.png);
 }
 
 .sub {
