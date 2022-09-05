@@ -239,7 +239,18 @@ img {
     width: 60%;
 }
 
-@mixin fotos ($bcolor, $border){
+$mapa1: (verdana: black,
+    sans-serif: gray,
+);
+
+    @each $font, $colores in $mapa1 {
+        .mpas-#{$colores} {
+        font-family: $font;
+        background-color: $colores;
+    }
+}
+
+@mixin fotos ($bcolor, $border) {
     background-color: $bcolor;
     width: 85%;
     margin: 2% auto;
@@ -476,7 +487,7 @@ img {
 
 @media only screen and (min-width:360px) and (max-width:479px) {
 
-    @mixin media {        
+    @mixin media {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
         width: 90%;
@@ -503,7 +514,7 @@ img {
 
 @media only screen and (min-width:480px) and (max-width:767px) {
 
-    @mixin media {        
+    @mixin media {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
         width: 90%;

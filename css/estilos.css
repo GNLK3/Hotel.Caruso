@@ -216,6 +216,16 @@ img {
   width: 60%;
 }
 
+.mpas-black {
+  font-family: verdana;
+  background-color: black;
+}
+
+.mpas-gray {
+  font-family: sans-serif;
+  background-color: gray;
+}
+
 .foto1 {
   background-color: gray;
   width: 85%;
