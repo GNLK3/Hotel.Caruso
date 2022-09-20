@@ -43,10 +43,6 @@ ul li a {
   color: lightgray;
 }
 
-.navbar a:hover {
-  background-color: black;
-}
-
 h1 {
   display: block;
   text-align: center;
@@ -72,10 +68,6 @@ hr {
   background-position: center;
   margin-bottom: 2%;
 }
-.caja1:hover {
-  filter: grayscale(60%);
-  transition: filter 3s;
-}
 
 .call {
   width: 50%;
@@ -83,26 +75,37 @@ hr {
   color: white;
   border: 4px solid black;
   background-color: rgba(51, 51, 51, 0.5);
-  padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 15px;
-  margin-top: 20px;
-  text-align: justify;
+  padding: 1%;
+  margin-left: 2%;
+  margin-top: 2%;
+  text-align: left;
 }
 .call p {
-  margin-bottom: 25px;
+  margin-bottom: 2%;
 }
 .call a {
   background-color: black;
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 1%;
   text-shadow: 1px 1px 5px purple;
   border: 1px solid white;
 }
 .call a:hover {
   background-color: blueviolet;
   transition: background-color 2s;
+}
+
+.oculta {
+  width: 100%;
+  height: auto;
+  color: white;
+  border: 4px solid purple;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding: 2%;
+  text-align: justify;
+  margin: 3% auto;
+  margin-top: 25%;
 }
 
 .caja2 {
@@ -114,33 +117,48 @@ hr {
   grid-template-rows: repeat(1, 300px);
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  background-color: gray;
+  color: black;
+  border-bottom: 30px solid gray;
 }
 .caja2:hover {
-  filter: drop-shadow(16px 16px 20px purple);
+  filter: drop-shadow(16px 16px 20px gray);
   transition: filter 3s;
+}
+.caja2 p {
+  background-color: gray;
+  color: white;
 }
 
 .imag1 {
   background-size: cover;
   background-position: center;
-  margin: 1%;
   background-image: url(../imageneshotel/spa1.png);
 }
 
 .imag2 {
   background-size: cover;
   background-position: center;
-  margin: 1%;
-  background-image: url(../imageneshotel/restaurante.png);
+  background-image: url(../imageneshotel/restaurante3.png);
 }
 
 .imag3 {
   background-size: cover;
   background-position: center;
-  margin: 1%;
   background-image: url(../imageneshotel/estacionamiento.png);
   overflow: hidden;
+}
+
+.se {
+  text-align: center;
+  color: black;
+  display: block;
+  margin-bottom: 2%;
+}
+.se:hover {
+  background-color: purple;
+  transition: background-color 2s;
+  text-decoration: none;
+  color: white;
 }
 
 .caja3, .caja10 {
@@ -213,16 +231,6 @@ img {
 
 .formula label {
   width: 60%;
-}
-
-.mpas-black {
-  font-family: verdana;
-  background-color: black;
-}
-
-.mpas-gray {
-  font-family: sans-serif;
-  background-color: gray;
 }
 
 .foto1 {
@@ -501,35 +509,12 @@ img {
   font-size: 1.1rem;
 }
 
-.se {
-  text-align: center;
-  background-color: purple;
-  color: white;
-  display: block;
-  text-decoration: none;
-}
-.se:hover {
-  background-color: skyblue;
-  transition: background-color 2s;
-}
-
 .tabla {
   text-align: center;
 }
 .tabla i {
   font-size: 30px;
   padding: 15px;
-}
-
-.oculta {
-  width: 100%;
-  height: auto;
-  color: white;
-  border: 4px solid purple;
-  background-color: gray;
-  padding: 1%;
-  text-align: justify;
-  margin: 0 auto;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 479px) {
