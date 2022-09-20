@@ -37,8 +37,8 @@ body {
 
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     li {
         display: inline-block;
@@ -48,9 +48,8 @@ ul {
         display: block;
         color: $color1;
         text-align: center;
-        padding: 16px 16px;
+        padding: 1%;
         text-decoration: none;
-        border-right: 1px solid $color2;
     }
 }
 
@@ -77,15 +76,15 @@ hr {
     width: 55%;
     border: 1px solid $color2;
     background-color: $color2;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .caja1 {
-    height: 850px;
-    background-image: url(../imageneshotel/hotel.png);
+    height: 700px;
+    background-image: url(../imageneshotel/vista.png);
     background-size: cover;
     background-position: center;
-    border: 5px solid $color6;
-    margin-top: 2%;
     margin-bottom: 2%;
 
     &:hover {
@@ -239,7 +238,8 @@ img {
     width: 60%;
 }
 
-$mapa1: (verdana: black,
+$mapa1: (
+    verdana: black,
     sans-serif: gray,
 );
 
@@ -315,6 +315,7 @@ $mapa1: (verdana: black,
 
 .foto2 {
     @include fotos($color4, $color6);
+    color: $color2;
 
     & :hover {
         transform: scale(1.1);
@@ -403,6 +404,7 @@ $mapa1: (verdana: black,
 
 .foto4 {
     @include fotos($color4, $color6);
+    color: $color2;
 
     & :hover {
         transform: scale(1.1);
@@ -449,7 +451,11 @@ $mapa1: (verdana: black,
     display: inline-block;
     margin: 0 auto;
     padding: 0;
-    font-size: 24px;
+    font-size: 0.95rem;
+
+    h3 {
+        font-size: 1.1rem;
+    }
 }
 
 .se {
@@ -490,7 +496,7 @@ $mapa1: (verdana: black,
     @mixin media {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         margin-top: 2%;
     }
@@ -517,7 +523,7 @@ $mapa1: (verdana: black,
     @mixin media {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         margin-top: 2%;
     }
