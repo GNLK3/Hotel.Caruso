@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="El Hotel se encuentra a 23 km de San Francisco y a 39 km de Berkeley, ademas, el aeropuerto internacional de San Francisco, esta situado a 1,1 km, siendo el más cercano.">
-    <meta name="keywords" content="telefono, ubicacion, mapa, san francisco, aeropuerto, mensaje, llamá, celular, contactanos, atención las 24hs">
+    <meta name="description"
+        content="El Hotel se encuentra a 23 km de San Francisco y a 39 km de Berkeley, ademas, el aeropuerto internacional de San Francisco, esta situado a 1,1 km, siendo el más cercano.">
+    <meta name="keywords"
+        content="telefono, ubicacion, mapa, san francisco, aeropuerto, mensaje, llamá, celular, contactanos, atención las 24hs">
     <meta name="author" content="Gianluca Caruso">
     <meta name="copyright" content="Gianluca Caruso">
     <meta name="robots" content="contacto">
@@ -32,7 +34,7 @@
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="../pages/reservas.html">Reservas</a>
+                    <a class="nav-link" href="../pages/reservas.html">Reservas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../pages/servicios.html">Servicios</a>
@@ -43,7 +45,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
-            </ul>            
+            </ul>
         </nav>
 
         <!-- Nav termina -->
@@ -82,7 +84,7 @@
         <!-- Nav Hamburguesa termina -->
 
     </header>
-    
+
     <main class="container-fluid col-sm-12 col-xl-12 caja1">
         <h1 class="text-white">Contacto</h1>
         <div class="container-fluid d-none d-sm-block call">
@@ -94,12 +96,13 @@
                 primera clase durante más de 60 años.</p>
             <a class="botoncito" href="../pages/contacto.html">Mas Info</a>
         </div>
-        
+
         <!--cambio de lugar del cuadro de texto-->
 
         <div class="container-fluid d-block d-sm-none oculta">
             <h2 id="h">Su bienestar siempre</h2>
-            <p class="text-justify">Una de nuestras principales prioridades para recibir a las personas que nos visitan y a
+            <p class="text-justify">Una de nuestras principales prioridades para recibir a las personas que nos visitan
+                y a
                 nuestro personal es
                 hacerlo pensando en su seguridad y bienestar.
                 Guiados por nuestro propósito de cuidado y nuestra experiencia en brindar un servicio de hospitalidad de
@@ -117,24 +120,54 @@
             <h2>Para una atención mas personalizada</h2>
             <h2>Dejanos tus datos</h2>
             <h2>Nosotros nos comunicamos con vos</h2>
-            <div class="form-group p-2">
-                <label for="Nombre">Nombre</label>
-                <label><input type="text" class="form-control" name="Nombre" required></label>
-            </div>
-            <div class="form-group">
-                <label for="Apellido">Apellido</label>
-                <label><input type="text" class="form-control" name="Apellido" required></label>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <label><input type="email" class="form-control" id="email"></label>
-            </div>
-            <div class="form-group">
-                <label for="Teléfono">Teléfono</label>
-                <label><input type="number" class="form-control" id="telefono"></label>
-            </div>
-            <button type="submit" class="btn btn-info">Enviar</button>
-            <button type="reset" class="btn btn-info">Limpiar</button>
+            <form action="/action_page.php">
+                <div class="form-group p-2">
+                    <label for="Nombre">Nombre</label>
+                    <label><input type="text" class="form-control" name="Nombre" required></label>
+                </div>
+                <div class="form-group">
+                    <label for="Apellido">Apellido</label>
+                    <label><input type="text" class="form-control" name="Apellido" required></label>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <label><input type="email" class="form-control" id="email" required></label>
+                </div>
+                <div class="form-group">
+                    <label for="Teléfono">Teléfono</label>
+                    <label><input type="number" class="form-control" id="telefono" required></label>
+                </div>
+
+                <!-- Inicia Modal -->
+
+                <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal">Enviar</button>
+
+                <div class="modal fade text-dark" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h4 class="modal-title">Gracias por confiar en nosotros</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <div class="modal-body text-left">
+                                En la brevedad uno de nuestros agentes se comunicara con usted para finalizar su
+                                reserva.
+                                <p class="text-right">Hotel & Spa California</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Termina Modal -->
+
+                <button type="reset" class="btn btn-info">Limpiar</button>
             </form>
         </div>
 
@@ -142,15 +175,16 @@
 
         <div class="container col-sm-12 col-xl-6 p-3 bg-dark text-white text-center caja4">
             <h3 class="p-2">📞 Contacto</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="p-2">Teléfono: 11-4999-9230</li>
-                    <li class="p-2">Teléfono fijo: 4456-2934</li>
-                    <li class="p-2">Email: Hotel&SpaCalifornia@gmail.com</li>
-                </ul>
+            <ul class="list-group list-group-flush">
+                <li class="p-2">Teléfono: 11-4999-9230</li>
+                <li class="p-2">Teléfono fijo: 4456-2934</li>
+                <li class="p-2">Email: Hotel&SpaCalifornia@gmail.com</li>
+            </ul>
             <h2 class="p-2">🧭Ubicacion</h2>
-                <iframe class="p-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416827.6190815037!2d-122.49311602522927!3d37.53715560907712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f779bde927a8b%3A0x313ab2037c9f208c!2s55%20S%20McDonnell%20Rd%2C%20San%20Francisco%2C%20CA%2094128%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1658006135937!5m2!1ses!2sar"
-                        width="60%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="p-2"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416827.6190815037!2d-122.49311602522927!3d37.53715560907712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f779bde927a8b%3A0x313ab2037c9f208c!2s55%20S%20McDonnell%20Rd%2C%20San%20Francisco%2C%20CA%2094128%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1658006135937!5m2!1ses!2sar"
+                width="60%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </div>
