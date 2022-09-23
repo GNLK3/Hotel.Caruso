@@ -259,6 +259,16 @@ img {
     width: 60%;
 }
 
+@keyframes aparicion{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
 @mixin fotos ($bcolor, $border) {
     background-color: $bcolor;
     width: 85%;
@@ -273,18 +283,15 @@ img {
 }
 
 .foto1 {
-    @include fotos($color3, $color4);    
-
-    & :hover {
-        transform: scale(1.1);
-        transition: 0, 2s;
-    }
+    @include fotos($color3, $color4);   
 }
 
 @mixin imagenes {
     background-position: center;
     background-size: cover;
-    border: 4px solid $color2;
+    border: 4px solid $color2;    
+    animation-name: aparicion;
+    animation-duration: 5s; 
 }
 
 .fotos1 {
@@ -325,11 +332,6 @@ img {
 .foto2 {
     @include fotos($color4, $color6);
     color: $color2;
-
-    & :hover {
-        transform: scale(1.1);
-        transition: 0, 2s;
-    }
 }
 
 .fotos7 {
@@ -369,11 +371,6 @@ img {
 
 .foto3 {
     @include fotos($color3, $color4);
-
-    & :hover {
-        transform: scale(1.1);
-        transition: 0, 2s;
-    }
 }
 
 .fotos13 {
@@ -414,11 +411,6 @@ img {
 .foto4 {
     @include fotos($color4, $color6);
     color: $color2;
-
-    & :hover {
-        transform: scale(1.1);
-        transition: 0, 2s;
-    }
 }
 
 .fotos19 {
