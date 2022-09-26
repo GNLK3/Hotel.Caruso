@@ -1,3 +1,5 @@
+/*inicio general*/
+
 $color1: white;
 $color2: black;
 $color3: gray;
@@ -10,10 +12,7 @@ $color9: lightblue;
 $color10: skyblue;
 $color11: rgba(51, 51, 51, 0.5);
 $color12: rgb(109, 109, 109);
-$font1:'Franklin Gothic Medium',
-'Arial Narrow',
-Arial,
-sans-serif;
+$font1:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
 
 *¨ {
     margin: 0;
@@ -76,6 +75,61 @@ hr {
     margin-bottom: 1%;
 }
 
+.oculta {
+    width: 100%;
+    height: auto;
+    color: $color1;
+    border: 4px solid $color6;
+    background-color: $color11;
+    padding: 2%;
+    text-align: justify;
+    margin: 3% auto;
+    margin-top: 25%;
+}
+
+img {
+    max-width: 1000px;
+    max-height: 1000px;
+}
+
+.subir {
+    height: 50px;
+    width: 50px;
+    background-color: $color2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: $color1;
+    border-radius: 50%;
+    border: 2px solid $color1;
+    font-size: 22px;
+}
+
+footer {
+    background-color: $color12;
+    height: 170px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+
+    i {
+        color: $color2;
+        font-size: 30px;
+        padding-left: 1%;
+    }
+
+    & .footer1 {
+        padding-left: 1%;
+    }
+}
+
+.piedepagina {
+    text-align: left;
+}
+
 .caja1 {
     height: 700px;
     background-image: url(../imageneshotel/vista.png);
@@ -114,17 +168,9 @@ hr {
     }
 }
 
-.oculta {
-    width: 100%;
-    height: auto;
-    color: $color1;
-    border: 4px solid $color6;
-    background-color: $color11;
-    padding: 2%;
-    text-align: justify;
-    margin: 3% auto;
-    margin-top: 25%;
-}
+/*fin general*/
+
+/*inicio Home*/
 
 .caja2 {
     width: 100%;
@@ -136,7 +182,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     color: $color2;
-    border-bottom: 30px solid gray;
+    border-bottom: 35px solid gray;
 
     &:hover {
         filter: drop-shadow(16px 16px 20px $color3);
@@ -146,6 +192,7 @@ hr {
     p{
         background-color: $color3;
         color: $color1;
+        padding: 1%;
     }
 }
 
@@ -193,71 +240,45 @@ hr {
     margin-top: 3%;
 }
 
-.caja10 {
-    @extend .caja3;
-    background-size: cover;
-}
-
 .nosotros {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
 }
 
-footer {
-    background-color: $color12;
-    height: 170px;
-    width: 100%;
-    display: inline-block;
-    margin-top: 100px;
+/*fin Home*/
+
+/*inicio servicios*/
+
+.tabla {
     text-align: center;
 
     i {
-        color: $color2;
         font-size: 30px;
-        padding-left: 1%;
-    }
-
-    & .footer1 {
-        padding-left: 1%;
+        padding: 15px;
     }
 }
 
-.piedepagina {
-    text-align: left;
+.caja10 {
+    @extend .caja3;
+    background-size: cover;
 }
+
+/*fin servicios*/
+
+/*inicio reservas*/
 
 .formulario label {
     width: 95%;
-}
-
-img {
-    max-width: 1000px;
-    max-height: 1000px;
-}
-
-.subir {
-    height: 50px;
-    width: 50px;
-    background-color: $color2;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-    line-height: 40px;
-    color: $color1;
-    border-radius: 50%;
-    border: 2px solid $color1;
-    font-size: 22px;
 }
 
 .form-group {
     width: 100%;
 }
 
-.formula label {
-    width: 60%;
-}
+/*fin reservas*/
+
+/*inicio galeria*/
 
 @keyframes aparicion{
     from{
@@ -459,14 +480,17 @@ img {
     }
 }
 
-.tabla {
-    text-align: center;
+/*fin galeria*/
 
-    i {
-        font-size: 30px;
-        padding: 15px;
-    }
+/*inicio contacto*/
+
+.formula label {
+    width: 60%;
 }
+
+/*fin contacto*/
+
+/*inicio Media query*/
 
 @media only screen and (min-width:360px) and (max-width:479px) {
 
@@ -509,15 +533,6 @@ img {
         flex-direction: column;
     }
 
-    .botoncito {
-        font-size: 12px;
-    }
-
-    .tabla i {
-        font-size: 13px;
-        padding: 2px;
-    }
-
     .foto1 {
         @include media;
     }
@@ -545,17 +560,8 @@ img {
         margin-top: 2%;
     }
 
-    .botoncito {
-        font-size: 15px;
-    }
-
     .nosotros {
         flex-direction: column;
-    }
-
-    .tabla i {
-        font-size: 19px;
-        padding: 4px;
     }
 
     .foto1 {
@@ -574,3 +580,5 @@ img {
         @include medias;
     }
 }
+
+/*fin Media query*/
