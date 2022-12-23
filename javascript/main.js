@@ -1,4 +1,4 @@
-/* CONSULTAR LA DISPONIBILIDAD DE LAS HABITACIONES */
+/* CONSULTAR LA DISPONIBILIDAD DE LAS HABITACIONES*/ 
 
 let mes= prompt("ingrese el mes en el que desea reservar")
 
