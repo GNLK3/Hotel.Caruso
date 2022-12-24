@@ -1,70 +1,99 @@
-/* CONSULTAR LOS PRECIOS DE LAS HABITACIONES*/
+/* FILTRAR HABITACIONES POR LOS PRECIOS*/
 
-/* let habitacion = prompt("Ingresa el tipo de habitacion")
-
-switch (habitacion){
-    case "Standard":
-        console.log("La habitacion Standard tiene un precio de $10000 por noche");
-        break;
-
-    case "Suite":
-        console.log("La habitacion Suite tiene un precio de $20000 por noche");
-        break;
-
-    case "Presidencial":
-        console.log("La habitacion Presidencial tiene un precio de $30000 por noche");
-        break;
-    
-    default:
-        console.log("Los datos ingresados no corresponden a ninguna de nuestras habitaciones");
-        break;
-}  */
-
-//////////
-
-/* const habitacion = [
-    {nombre: "Standard", precio: 10000},
-    {nombre: "Standard Doble", precio: 20000},
-    {nombre: "Suite", precio: 30000},
-    {nombre: "Suite Doble", precio: 40000},
-    {nombre: "Presidencial", precio: 50000},
-    {nombre: "Presidencial Doble", precio: 60000},
+const hotel = [
+    {nombre: "Standard", precio: 250},
+    {nombre: "Standard Doble", precio: 300},
+    {nombre: "Suite", precio: 400},
+    {nombre: "Suite Doble", precio: 450},
+    {nombre: "Presidencial", precio: 600},
+    {nombre: "Presidencial Doble", precio: 700},
 ]
 
-let prec = prompt("ingrese el precio maximo que desea pagar")
+for (const habitaciones of hotel){ 
+    console.log(habitaciones.nombre);    
+    console.log(habitaciones.precio);    
+}
 
-const eleccion = habitacion.filter((el) => el.precio < prec)
+let prec = prompt("ingrese el precio maximo de la habitacion")
+
+const eleccion = hotel.filter((el) => el.precio < prec)
 
 console.log(eleccion);
 
- */
 
-//////////
+/* CALCULAR IMPUESTO DOLAR PARA LAS HABITACIONES */
 
-/* class Habitacion {
-    constructor (nombre, precio) {
-        this.nombre = nombre.toUpperCase ();
-        this.precio = parseFloat (precio);
-        this.nodisponible = false;
-    }
 
-    sumaImpuestoPais (){
-        this.precio = this.precio * 0.3;
-    }
-}
 
-const habitaciones = [];
+/* ELEGI EL MES */
 
-habitaciones.push (new Habitacion("Standard", 10000));
-habitaciones.push (new Habitacion("StandardDoble", 20000));
-habitaciones.push (new Habitacion("Suite", 30000));
-habitaciones.push (new Habitacion("SuiteDoble", 40000));
-habitaciones.push (new Habitacion("Presidencial", 50000));
-habitaciones.push (new Habitacion("PresidencialDoble", 60000));
+let fecha = prompt("Elegi el numero del mes en el que deseas alquilar")
 
-for (const Habitacion of habitaciones)
-    console.log(Habitacion.sumaImpuestoPais); 
- */
+switch (fecha){
+    case "0":
+        console.log(new Date(2023, 0).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+    
+    case "1":
+        console.log(new Date(2023, 1).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
 
-///////////////
+    case "2":
+        console.log(new Date(2023, 2).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "3":
+        console.log(new Date(2023, 3).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "4":
+        console.log(new Date(2023, 4).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "5":
+        console.log(new Date(2023, 5).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "6":
+        console.log(new Date(2023, 6).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "7":
+        console.log(new Date(2023, 7).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "8":
+        console.log(new Date(2023, 8).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "9":
+        console.log(new Date(2023, 9).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "10":
+        console.log(new Date(2023, 10).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+
+    case "11":
+        console.log(new Date(2023, 11).toLocaleDateString('es-es', { weekday:"long", year:"numeric", month:"long", day:"numeric"}));
+        console.log("Tenemos habitaciones disponibles para la fecha seleccionada");
+        break;
+    
+    default:
+        console.log("datos incorrectos");
+        break;
+}  
+
+
 
