@@ -1,6 +1,6 @@
 /* ELEGI EL MES */
 
-let fecha = prompt("Elegi el numero del mes en el que deseas viajar")
+let fecha = prompt("Elegi del 0 al 11 correspondiendo al numero del mes en el que deseas viajar")
 
 switch (fecha){
     case "0":
