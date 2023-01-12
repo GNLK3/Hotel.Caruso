@@ -108,53 +108,25 @@
         <div class="container-fluid col-xs-12 col-sm-10 col-md-7 col-lg-6 col-xl-4 p-4 my-2 bg-secondary text-left text-white formulario">
             <h3>Reservas Online</h3>
 
-            <form action="/action_page.php">
+            <form action="/action_page.php" id="formFec" >
                 <div class="form-group">
-                    <label for="Nombre">Fecha de ingreso</label>
-                    <label><input type="date" min="2022-07-17" class="form-control" name="fecha" required></label>
+                    <label for="fechaIn">Fecha de ingreso</label>
+                    <label><input type="date" id="fechaIn" min="2022-07-17" class="form-control" name="fecha" required></label>
                 </div>
                 <div class="form-group">
-                    <label for="Nombre">Fecha de salida</label>
-                    <label><input type="date" min="2022-07-18" class="form-control" name="fecha" required></label>
+                    <label for="fechaOut">Fecha de salida</label>
+                    <label><input type="date" id="fechaOut" min="2022-07-18" class="form-control" name="fecha" required></label>
                 </div>
                 <div class="form-group">
-                    <label for="Nombre">Horario de ingreso</label>
-                    <label><input type="time" class="form-control" required></label>
+                    <label for="hora">Horario de ingreso</label>
+                    <label><input type="time" id="hora" class="form-control" required></label>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <label><input type="email" class="form-control" id="email" required></label>
+                    <label><input type="email" id="email" class="form-control" id="email" required></label>
                 </div>
 
-                <!-- Inicia Modal -->
-
-                <button type="submit" class="btn btn-dark" data-toggle="modal" data-target="#myModal">Enviar</button>
-
-                <div class="modal fade text-dark" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-                                <h4 class="modal-title">ERROR-SECCIÓN EN MANTENIMIENTO</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-
-                            <div class="modal-body">
-                                Para efectuar su reserva por favor comuníquese con nosotros desde la sección "Contacto".<br>
-                                Disculpe las molestias.                                
-                                <p class="text-right">Hotel & Spa California</p>
-                            </div>
-
-                            <div class="modal-footer">
-                                <a type="button" class="btn btn-info" href="contacto.html">Contacto</a>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Termina Modal -->
+                <button type="submit" value="Registrar" id="registrar" class="btn btn-dark">Enviar</button>
 
                 <button type="reset" class="btn btn-dark">Limpiar</button>
             </form>
