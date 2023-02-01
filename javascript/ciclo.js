@@ -1,6 +1,7 @@
 /* Formulario de Reservas */
 
 const formFecha = document.querySelector("#formFec")
+    habSel = document.querySelector("#sel1")
     fechaIngreso = document.querySelector("#fechaIn")
     fechaSalida = document.querySelector("#fechaOut")
     horario = document.querySelector("#hora")
@@ -15,7 +16,8 @@ if (localStorage.getItem("reservas")) {
 }
 
 class Reserva {
-    constructor(fechaIngreso, fechaSalida, horario, email) {
+    constructor(habSel, fechaIngreso, fechaSalida, horario, email) {
+        this.habSeleccionada = habSel;
         this.fechaDeIngreso = fechaIngreso;
         this.fechaDeSalida = fechaSalida;
         this.horarioDeIngreso = horario;
@@ -33,7 +35,35 @@ function guardarEnLS(arr) {
 
 formFecha.addEventListener('submit', (e)=>{
     e.preventDefault();
-    const newReg= new Reserva(fechaIngreso.value, fechaSalida.value, horario.value, email.value);
+    const newReg= new Reserva(habSel.value, fechaIngreso.value, fechaSalida.value, horario.value, email.value);
     guardarReserva(newReg)
     guardarEnLS(reservas)
+})
+
+registrar.addEventListener("click",()=>{
+    Swal.fire(
+        'Reservar Registrada!',
+        'Gracias por elegirnos',
+        'success'
+      )
+})
+
+clean.addEventListener("click",()=>{
+    Swal.fire({
+        title: 'Desea limpiar el formulario?',
+        text: "Los datos ingresados seran borrados",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Borrar!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Datos eliminados',
+            '',
+            'success'
+          )
+        }
+      })
 })
