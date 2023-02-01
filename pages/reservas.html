@@ -88,7 +88,10 @@
         <h1 class="text-white">Reservas</h1>
         <div class="container-fluid d-none d-sm-block call">
             <h2 class="text-left">Atracciones del área</h2>
-            <p class="text-left">Observe cómo la niebla cae sobre el puente Golden Gate, diríjase hacia el sur para asistir a una reunión en la Universidad de Stanford o planifique un día de caminatas y escalada en roca en las montañas de Santa Cruz. Todo está a una hora de Hotel y la comodidad inigualable de su ubicación "en el aeropuerto".</p>
+            <p class="text-left">Observe cómo la niebla cae sobre el puente Golden Gate, diríjase hacia el sur para
+                asistir a una reunión en la Universidad de Stanford o planifique un día de caminatas y escalada en roca
+                en las montañas de Santa Cruz. Todo está a una hora de Hotel y la comodidad inigualable de su ubicación
+                "en el aeropuerto".</p>
             <a class="botoncito" href="contacto.html">Mas Info</a>
         </div>
 
@@ -96,7 +99,10 @@
 
         <div class="container-fluid d-block d-sm-none oculta">
             <h2 class="text-left">Atracciones del área</h2>
-            <p class="text-left">Observe cómo la niebla cae sobre el puente Golden Gate, diríjase hacia el sur para asistir a una reunión en la Universidad de Stanford o planifique un día de caminatas y escalada en roca en las montañas de Santa Cruz. Todo está a una hora de Hotel y la comodidad inigualable de su ubicación "en el aeropuerto".</p>
+            <p class="text-left">Observe cómo la niebla cae sobre el puente Golden Gate, diríjase hacia el sur para
+                asistir a una reunión en la Universidad de Stanford o planifique un día de caminatas y escalada en roca
+                en las montañas de Santa Cruz. Todo está a una hora de Hotel y la comodidad inigualable de su ubicación
+                "en el aeropuerto".</p>
             <a class="btn btn-info botoncito" href="contacto.html">Mas Info</a>
         </div>
     </main>
@@ -105,17 +111,28 @@
     <div class="nosotros">
         <!-- Inicio del formulario -->
 
-        <div class="container-fluid col-xs-12 col-sm-10 col-md-7 col-lg-6 col-xl-4 p-4 my-2 bg-secondary text-left text-white formulario">
+        <div
+            class="container-fluid col-xs-12 col-sm-10 col-md-7 col-lg-6 col-xl-4 p-4 my-2 bg-secondary text-left text-white formulario">
             <h3>Reservas Online</h3>
 
-            <form action="/action_page.php" id="formFec" >
+            <form action="/action_page.php" id="formFec">
+                <div class="form-group">
+                    <label for="sel1">Elegí la Habiación</label>
+                    <select class="form-control" id="sel1">
+                      <option>Standard</option>
+                      <option>Suite</option>
+                      <option>Presidencial</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label for="fechaIn">Fecha de ingreso</label>
-                    <label><input type="date" id="fechaIn" min="2022-07-17" class="form-control" name="fecha" required></label>
+                    <label><input type="date" id="fechaIn" min="2022-07-17" class="form-control" name="fecha"
+                            required></label>
                 </div>
                 <div class="form-group">
                     <label for="fechaOut">Fecha de salida</label>
-                    <label><input type="date" id="fechaOut" min="2022-07-18" class="form-control" name="fecha" required></label>
+                    <label><input type="date" id="fechaOut" min="2022-07-18" class="form-control" name="fecha"
+                            required></label>
                 </div>
                 <div class="form-group">
                     <label for="hora">Horario de ingreso</label>
@@ -128,7 +145,7 @@
 
                 <button type="submit" value="Registrar" id="registrar" class="btn btn-dark">Enviar</button>
 
-                <button type="reset" class="btn btn-dark">Limpiar</button>
+                <button type="reset" id="clean" class="btn btn-dark">Limpiar</button>
             </form>
         </div>
 
@@ -158,7 +175,7 @@
         <!-- Termina tarjeta -->
     </div>
 
-        <!-- Inicio footer -->
+    <!-- Inicio footer -->
 
     <footer class="container-fluid col-12 bg-secondary text-center">
         <div class="piedepagina">
@@ -171,21 +188,22 @@
         <p>Copyright&copy; - Hotel&Spa California - 2022 - Todos los derechos reservados</p>
     </footer>
 
-        <!-- Termina footer -->
+    <!-- Termina footer -->
 
     <a href="#" class="subir">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
-    <script src="../javascript/ciclo.js"></script>    
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+    <script src="../javascript/ciclo.js"></script>
 </body>
 
 </html>
