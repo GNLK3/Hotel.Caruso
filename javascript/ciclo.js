@@ -1,17 +1,17 @@
 /* Formulario de Reservas */
 
-const formFecha = document.querySelector("#formFec")
-    habSel = document.querySelector("#sel1")
-    fechaIngreso = document.querySelector("#fechaIn")
-    fechaSalida = document.querySelector("#fechaOut")
-    horario = document.querySelector("#hora")
-    email = document.querySelector("#email")
+const formFecha = document.querySelector("#formFec");
+const habSel = document.querySelector("#sel1");
+const fechaIngreso = document.querySelector("#fechaIn");
+const fechaSalida = document.querySelector("#fechaOut");
+const horario = document.querySelector("#hora");
+const email = document.querySelector("#email");
 
 let reservas;
 
 if (localStorage.getItem("reservas")) {
     reservas = JSON.parse(localStorage.getItem("reservas"));
-} else{
+} else {
     reservas = [];
 }
 
@@ -25,33 +25,92 @@ class Reserva {
     }
 }
 
-function guardarReserva(reserva){
-    return reservas.push(reserva)
+function guardarReserva(reserva) {
+    return reservas.push(reserva);
 }
 
 function guardarEnLS(arr) {
-    return localStorage.setItem('reserva',JSON.stringify(arr))
+    return localStorage.setItem("reservas", JSON.stringify(arr));
 }
 
-formFecha.addEventListener('submit', (e)=>{
+formFecha.addEventListener("submit", (e) => {
     e.preventDefault();
-    const newReg= new Reserva(habSel.value, fechaIngreso.value, fechaSalida.value, horario.value, email.value);
-    guardarReserva(newReg)
-    guardarEnLS(reservas)
-})
 
-registrar.addEventListener("click",()=>{
+    if (!habSel.value || !fechaIngreso.value || !fechaSalida.value || !horario.value || !email.value) {
+        Swal.fire({
+            title: "Error",
+            text: "Por favor completa todo el formulario",
+            icon: "error",
+        });
+        return;
+    }
+
+    let costoPorNoche;
+    switch (habSel.value) {
+        case "Standard":
+            costoPorNoche = 100;
+            break;
+        case "Suite":
+            costoPorNoche = 200;
+            break;
+        case "Presidencial":
+            costoPorNoche = 300;
+            break;
+    }
+
+    const fechaIngresoDate = new Date(fechaIngreso.value);
+    const fechaSalidaDate = new Date(fechaSalida.value);
+    const diasHospedados = (fechaSalidaDate - fechaIngresoDate) / 1000 / 60 / 60 / 24;
+    const costoTotal = costoPorNoche * diasHospedados;
+
+    const newReg = new Reserva(habSel.value, fechaIngreso.value, fechaSalida.value, horario.value, email.value);
+    guardarReserva(newReg);
+    guardarEnLS(reservas);
+
+    fetch('https://jsonplaceholder.typicode.com/posts/', {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newReg),
+    })
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("La reserva no pudo ser enviada");
+            }
+            return response.json();
+        })
+        .then((data) => {
+            Swal.fire(
+                "Reserva Confirmada!",
+                `Gracias por elegirnos. El costo de la habitación seleccionada es de $${costo}.`,
+                "success",
+            );
+        })
+        .catch((error) => {
+            Swal.fire({
+                title: "Error",
+                text: error.message,
+                icon: "error",
+            });
+        });
+});
+
+const registrar = document.getElementById("registrar");
+const limpia = document.getElementById("limpia");
+
+registrar.addEventListener("click", () => {
     Swal.fire(
-        'Reservar Registrada!',
-        'Gracias por elegirnos',
-        'success'
-      )
-})
+        "Reserva Confirmada!",
+        "Gracias por elegirnos",
+        "success",
+    );
+});
 
 clean.addEventListener("click",()=>{
     Swal.fire({
         title: 'Desea limpiar el formulario?',
-        text: "Los datos ingresados seran borrados",
+        text: "Sus datos seran borrados",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -66,4 +125,4 @@ clean.addEventListener("click",()=>{
           )
         }
       })
-})
+}) 
