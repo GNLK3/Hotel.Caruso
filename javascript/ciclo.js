@@ -4,7 +4,6 @@ const formFecha = document.querySelector("#formFec");
 const habSel = document.querySelector("#sel1");
 const fechaIngreso = document.querySelector("#fechaIn");
 const fechaSalida = document.querySelector("#fechaOut");
-const horario = document.querySelector("#hora");
 const email = document.querySelector("#email");
 
 let reservas;
@@ -16,12 +15,12 @@ if (localStorage.getItem("reservas")) {
 }
 
 class Reserva {
-    constructor(habSel, fechaIngreso, fechaSalida, horario, email) {
+    constructor(habSel, fechaIngreso, fechaSalida, email, costoTotal) {
         this.habSeleccionada = habSel;
         this.fechaDeIngreso = fechaIngreso;
         this.fechaDeSalida = fechaSalida;
-        this.horarioDeIngreso = horario;
         this.email = email;
+        this.costoTotal = costoTotal;
     }
 }
 
@@ -36,10 +35,21 @@ function guardarEnLS(arr) {
 formFecha.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    if (!habSel.value || !fechaIngreso.value || !fechaSalida.value || !horario.value || !email.value) {
+    if (!habSel.value || !fechaIngreso.value || !fechaSalida.value || !email.value) {
         Swal.fire({
             title: "Error",
             text: "Por favor completa todo el formulario",
+            icon: "error",
+        });
+        return;
+    }
+
+    const fechIngreso = new Date(fechaIngreso.value);
+    const fechSalida = new Date(fechaSalida.value);
+    if (fechIngreso >= fechSalida) {
+        Swal.fire({
+            title: "Error",
+            text: "La fecha de salida debe ser posterior a la fecha de ingreso",
             icon: "error",
         });
         return;
@@ -63,7 +73,7 @@ formFecha.addEventListener("submit", (e) => {
     const diasHospedados = (fechaSalidaDate - fechaIngresoDate) / 1000 / 60 / 60 / 24;
     const costoTotal = costoPorNoche * diasHospedados;
 
-    const newReg = new Reserva(habSel.value, fechaIngreso.value, fechaSalida.value, horario.value, email.value);
+    const newReg = new Reserva(habSel.value, fechaIngreso.value, fechaSalida.value, email.value, costoTotal);
     guardarReserva(newReg);
     guardarEnLS(reservas);
 
@@ -82,10 +92,13 @@ formFecha.addEventListener("submit", (e) => {
         })
         .then((data) => {
             Swal.fire(
-                "Reserva Confirmada!",
-                `Gracias por elegirnos. El costo de la habitación seleccionada es de $${costo}.`,
+                "En breve lo vamos a redireccionar a nuestro sitio de pagos.",
+                `El costo de su reserva es de $${costoTotal}.`,
                 "success",
             );
+            setTimeout(() => {
+                window.location.href = "https://www.mercadopago.com.ar/";
+                }, 4000);
         })
         .catch((error) => {
             Swal.fire({
@@ -97,7 +110,6 @@ formFecha.addEventListener("submit", (e) => {
 });
 
 const registrar = document.getElementById("registrar");
-const limpia = document.getElementById("limpia");
 
 registrar.addEventListener("click", () => {
     Swal.fire(
@@ -107,22 +119,23 @@ registrar.addEventListener("click", () => {
     );
 });
 
-clean.addEventListener("click",()=>{
+document.getElementById("clean").addEventListener("click", function() {
     Swal.fire({
-        title: 'Desea limpiar el formulario?',
-        text: "Sus datos seran borrados",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Borrar!'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            'Datos eliminados',
-            '',
-            'success'
-          )
-        }
-      })
-}) 
+      title: 'Desea limpiar el formulario?',
+      text: "Sus datos seran borrados",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Borrar!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        document.getElementById("formFec").reset();
+        Swal.fire(
+          'Datos eliminados',
+          '',
+          'success'
+        )
+      }
+    })
+  });
