@@ -31,7 +31,7 @@ function guardarReserva(reserva) {
 function guardarEnLS(arr) {
     return localStorage.setItem("reservas", JSON.stringify(arr));
 }
-
+   
 formFecha.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -94,7 +94,7 @@ formFecha.addEventListener("submit", (e) => {
             Swal.fire(
                 "En breve lo vamos a redireccionar a nuestro sitio de pagos.",
                 `El costo de su reserva es de $${costoTotal}.`,
-                "success",
+                "info",
             );
             setTimeout(() => {
                 window.location.href = "https://www.mercadopago.com.ar/";
@@ -139,3 +139,5 @@ document.getElementById("clean").addEventListener("click", function() {
       }
     })
   });
+  
+  
